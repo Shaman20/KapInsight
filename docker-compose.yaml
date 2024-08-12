@@ -1,0 +1,48 @@
+services:
+  scraper-service:
+    build: ./scraper-service
+    ports:
+      - "5000:5000"
+    environment:
+      - API_KEY=AIzaSyBCY9c3InjO535IYDYbyLEOtC-3J_uL_kY
+
+  lighthouse-service:
+    build: ./lighthouse
+    ports:
+      - "6060:6060"
+
+  server-service:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-4015}:${PORT:-4015}"
+    environment:
+      - PORT=${PORT:-4015}
+      - DATABASE=${DATABASE:-analytics-app}
+      - USERNAME=${USERNAME:-root}
+      - PASSWORD=${PASSWORD:-password}
+      - DIALECT=${DIALECT:-mysql}
+      - HOST=db
+      - TOKEN_KEY=${TOKEN_KEY}
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PASSWORD:-password}
+      MYSQL_DATABASE: ${DATABASE:-analytics-app}
+      MYSQL_USER: ${USERNAME:-root}
+      MYSQL_PASSWORD: ${PASSWORD:-password}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
+
+networks:
+  default:
+    name: app-network

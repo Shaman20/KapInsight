@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Website Analyzer Architecture</text>
+  
+  <!-- Existing Architecture -->
+  <g transform="translate(50, 80)">
+    <rect width="300" height="200" fill="#e6f3ff" stroke="#0066cc" stroke-width="2"/>
+    <text x="150" y="30" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Existing Architecture</text>
+    
+    <!-- Components -->
+    <rect x="20" y="50" width="120" height="40" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+    <text x="80" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Flask Server</text>
+    
+    <rect x="160" y="50" width="120" height="40" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+    <text x="220" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Analyzer Module</text>
+    
+    <rect x="20" y="110" width="120" height="40" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+    <text x="80" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">NLTK / TextBlob</text>
+    
+    <rect x="160" y="110" width="120" height="40" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+    <text x="220" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">BeautifulSoup</text>
+    
+    <rect x="90" y="170" width="120" height="40" fill="#99ccff" stroke="#0066cc" stroke-width="2"/>
+    <text x="150" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">PageSpeed API</text>
+  </g>
+  
+  <!-- Future Improvements -->
+  <g transform="translate(400, 80)">
+    <rect width="350" height="470" fill="#e6ffe6" stroke="#006600" stroke-width="2"/>
+    <text x="175" y="30" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Future Improvements</text>
+    
+    <!-- Components -->
+    <rect x="20" y="50" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="90" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Async Processing</text>
+    
+    <rect x="190" y="50" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="260" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Caching System</text>
+    
+    <rect x="20" y="110" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="90" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Custom ML Models</text>
+    
+    <rect x="190" y="110" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="260" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">LLM Integration</text>
+    
+    <rect x="20" y="170" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="90" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">User Dashboard</text>
+    
+    <rect x="190" y="170" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="260" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Plugin System</text>
+    
+    <rect x="20" y="230" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="90" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Microservices</text>
+    
+    <rect x="190" y="230" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="260" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Message Queue</text>
+    
+    <rect x="20" y="290" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="90" y="315" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Database Integration</text>
+    
+    <rect x="190" y="290" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="260" y="315" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Analytics Module</text>
+    
+    <rect x="20" y="350" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="90" y="375" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Auth System</text>
+    
+    <rect x="190" y="350" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="260" y="375" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">API Key Management</text>
+    
+    <rect x="20" y="410" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="90" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Chatbot Interface</text>
+    
+    <rect x="190" y="410" width="140" height="40" fill="#99ff99" stroke="#006600" stroke-width="2"/>
+    <text x="260" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Continuous Learning</text>
+  </g>
+  
+  <!-- Arrows -->
+  <path d="M350 180 L400 180" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M350 180 L400 315" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

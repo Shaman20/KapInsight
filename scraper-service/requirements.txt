@@ -1,0 +1,6 @@
+Flask
+nltk
+textblob
+requests
+bs4
+flask_cors

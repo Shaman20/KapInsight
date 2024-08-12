@@ -1,0 +1,23 @@
+{
+  "name": "lighthouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "lighthouse": "^12.2.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17"
+  }
+}
